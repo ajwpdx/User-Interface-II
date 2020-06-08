@@ -26,12 +26,12 @@ time, mark, audio, video {
  }
 
  h1 {
-     font-size: 4.5rem;
+     font-size: 4rem;
      color: white;
  }
 
  h2 {
-     font-size: 3.5rem;
+     font-size: 3rem;
      color: white;
  }
  
@@ -52,30 +52,31 @@ time, mark, audio, video {
     background-color: #f9c80e;
     border-radius: 10px;
     color: #11302A;
-    margin: 1%;
+    margin: 1rem;
     text-decoration: none;
 }
 
 header {
     background-color: #11302A;
-    padding: 1%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin:0 auto;
-    flex-wrap: wrap;
+    padding: 1%;
 }
 
 
 header h1 {
-    width: 30%;
-    padding-left: 4%;
+    width: 40%;
     text-decoration: underline;
+    text-align: center;
 }
 
  header nav {   
      display: flex;
      width: 50%;
      margin: 0 auto;
+     display: flex;
+     justify-content:center;
  }
 
  header nav a {
@@ -83,8 +84,7 @@ header h1 {
      color: white;
      font-size: 1.5rem;
      margin: 5%;
-     display: flex;
-      }
+           }
 
  header nav a:hover {
        transform: scale(1.1);
@@ -104,7 +104,8 @@ header h1 {
  }
 
 .title-img {
-    width:40%;
+    width:30%;
+    padding: 2%;
 }
 
 .title-img img {
@@ -167,4 +168,20 @@ footer {
 
 footer {
     color: white;
+}
+
+@media (max-width:800px){
+header {
+    flex-direction: column;
+}
+
+header h1 {
+    width: 100%;
+}
+
+}
+
+@media (max-width:500px){
+
+    
 }
